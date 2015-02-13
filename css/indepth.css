@@ -47,7 +47,10 @@
 	}
 	
 	
-	
+	#com{
+		width: 90%;
+		margin: auto;
+	}
 	#indepth_menu{
 		display: table;
 		position: fixed;
@@ -131,6 +134,22 @@
 		background-image: url(../images/IMG_10_Falc.png);
 	}
 
+
+
+#indepth_button_ver{
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/IMG_scroll.png);
+	margin: auto;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.indepth_button_cont{
+	width: 100%;
+	position: absolute;
+	bottom: 80px;
+}
 
 .indepth_pages{
 	width: 100%;
@@ -348,7 +367,7 @@
 /* mobile adecuations */
 
 @media screen and (max-width: 1960px) {
-	min-width: 800px;
+	
 }
 
 /*** Movil ****/
@@ -405,73 +424,9 @@
 
 @media screen and (max-width: 800px) {
 
-	#indepth_page3{
-		width: 100%;
-	}
 
-	#indepth_page3 .indepth_page_body{
-		width: 100%;
-	}
 
-	#indepth_page4{
-		background-size: 800px auto, 1920px auto;
-		height: 1500px;
-	}
-
-	#indepth_page4a .indepth_page_body{
-		width: 100%;
-	}
-		#indepth_page4a img{
-			width: 100%;
-		}
-	.indepth_docs, .indepth_docs_container{
-		width: 768px;
-		height: 412px;
-	}
-
-	.indepth_docs_container{
-		margin-left: 0px;
-	}
-	.indepth_docs_r{
-		width: 256px;
-	}
-
-	.indepth_docs_left{
-		width: 512px;
-
-	}
-
-	.indepth_docs_title{
-		font-size: 18px;
-		margin-bottom: 2px;
-	}
-
-	.indepth_docs_text{
-		font-size: 14px;
-	}
-
-	.indepth_docs_description{
-		height: 132px;
-	}
-
-.rertert{
-	width:440px;
-}
-
-#indepth_twitter_editor{
-	padding-left: 10px;
-}
-#indepth_twitter_editor iframe {
-	max-width: 280px;
-}
-#indepth_editor_profile .indepth_page_body{
-	width: 760px;
-}
-
-.indepth_twitter_editor_header_caja{
-	width: 240px;
-}
-
+	
 	.indepth_pages{
 		width: 100%;
 		max-width: 800px;	
@@ -510,22 +465,27 @@
 		width: 100%;
 	}
 	
-	#page_5 .indepth_break {
-		height: 560px;
+	.indepth_menu_item{
+		float: left;
+		width: 40px;
+		margin-right: 5px;
+		
+	}
+		
+	.indepth_menu_cont{
+		width: auto;
+		
 	}
 	
-	.indepth_page_infografia img{
-		width: 640px;
-	}
-
-	#info_controls img{
+	#indepth_menu{
 		width: 100%;
+		margin-left: 0px;
+		background: black;
+		padding: 5px 0;
 	}
 	
-	/*** dinamico **/
-	.indepth_break{
-		max-height: 700px;
-	}
+
+
 	
 	#indepth_cover .indepth_parallax_back{
 		background-size: cover;
@@ -533,11 +493,7 @@
 		background-repeat: no-repeat;
 	}
 	
-	#indepth_break_5 .indepth_parallax_back{
-		background-size: 1200px;
-		background-attachment: scroll;
-		height: 560px;
-	}
+
 	
 	.indepth_break .indepth_parallax_back .indepth_text_container{
 		padding: 0 10px;
@@ -547,94 +503,97 @@
 		width: 100%;
 	
 	}
+	
+
 
 
 
 }
 
-@media screen and (max-width: 700px) {
-	.indepth_quote_container{
-		width: 100%;
-	}
+@media screen and (max-width: 750px) {
 	
-	.indepth_mapa_r{
-		width: 100%;
-	}
-	
-	.image_quote_left .indepth_text_image{
-		float: none;
-	}
-	
-	.image_quote_left .indepth_quote{
-		float: none;
-		margin-left: 0px;
-		margin: auto;
-		width: 90%;
-		margin-top: 15px;
-	}
+		.indepth_break{
+			display: none;
+		}
+		
+		.indepth_page_image{
+			background-size: 414px;
+			background-repeat: no-repeat;
+		}
+		
+		
+		#indepth_page1 {
+			background-image: url(../images/movil/JC_2_Chicharito.jpg);
+			height: 1402px;
+			background-color: #1462ce;
+		}
+		
+		#indepth_page2 {
+			background-image: url(../images/movil/JC_3_Jimenez.jpg);
+			height: 1236px;
+			background-color: #f2561a;
+		}
+		
+		#indepth_page3 {
+			background-image: url(../images/movil/JC_4_Pulido.jpg);
+			height: 1397.5px;
+			background-color: #e5b70f;
+		}
+		
+		#indepth_page4 {
+			background-image: url(../images/movil/JC_5_Messi.jpg);
+			height: 1330px;
+			background-color: #589e13;
+		}
+		
+		#indepth_page5 {
+			background-image: url(../images/movil/JC_6_Memo.jpg);
+			height: 1329.5px;
+			background-color: #be1551;
+		}
+		
+		#indepth_page6 {
+			background-image: url(../images/movil/JC_7_Ballo.jpg);
+			height: 1480px;
+			background-color: #1462ce;
+		}
+		
+		#indepth_page7 {
+			background-image: url(../images/movil/JC_8_Turco.jpg);
+			height: 1324.5px;
+			background-color: #f2561a;
+			
+		}
+		
+		#indepth_page8 {
+			background-image: url(../images/movil/JC_9_Chepo.jpg);
+			height: 1470.5px;
+			background-color: #e5b70f;
+		}
+		
+		#indepth_page9 {
+			background-image: url(../images/movil/JC_10_CR.jpg);
+			height: 1390px;
+			background-color: #589e13;
+		}
+		
+		#indepth_page10 {
+			background-image: url(../images/movil/JC_11_Rada.jpg);
+			height: 1326.5px;
+			background-color: #be1551;
+		}
 	
 }
 
-@media screen and (max-width: 740px) {
-	#indepth_editor_profile .indepth_page_body{
-		width: 100%;
-	}
-	
-	.rertert{
-		float: none;
-		width: 500px;
-		margin: auto;
-		position: relative;
-	}
-	
-	#indepth_twitter_editor{
-		display: none;
-	}
-	
-	.editor_picture{
-		top: -15px;
-	}
-
-	#indepth_page4{
-		background-size: 740px auto, 1920px auto;
-		height: 1500px;
-	}
-
-	#indepth_page1{
-		background-size: 740px auto, 1920px auto;
-		height: 1300px;
-	}
-	
-	.indepth_docs_container{
-		width: 320px;
-		height: auto;
-		margin: auto;
-	}
-
-	.indepth_docs, .indepth_docs_container{
-		height: auto;
-	}
-
-	.indepth_docs_small{
-		position: relative;
-	}
-
-	.indepth_docs{
-		width: 320px;
-	}
-
-	.indepth_docs_left,.indepth_docs_r{
-		float: none;
-		width: 100%;
-	}
-
-	.indepth_docs_description{
-		position: relative;
-		margin-bottom: 5px;
-	}
-}
 
 @media screen and (max-width: 605px) {
+	
+	
+	
+	#com{
+		width: 98%;
+		margin: auto;
+	}
 	
 	.indepth_docs_container{
 		width: 320px;
@@ -678,42 +637,18 @@
 
 
 
-	#indepth_break_5 .indepth_parallax_back {
-		background-size: auto 100%;
-		height: 300px;
-		background-repeat: no-repeat;
-		background-attachment: initial;
-		background-position: 50% 50%;
-	}
 	
 	.indepth_break {
 		max-height: 500px;
 	}
-	
-	#indepth_break_5 {
-		display: table;
-		
-	}
+
 
 
 	
 	#indepth_cover{
 		height: 650px;
 	}
-	
 
-	
-	.indepth_image_left,.indepth_image_r{
-		float: none;
-		margin: 30px auto;
-		text-align: center;
-	}
-	
-	.indepth_quote_left{
-		width: 80%;
-		float: none;
-		margin: 0 auto 25px;
-	}
 	
 	
 	
@@ -727,16 +662,7 @@
 		font-weight: 700;
 	}
 	
-	.indepth_libros_controles{
-	display: none;
-}
-.indepth_text{
-	width: 95%;
-}
-
-.indepth_page_image .indepth_page_body{
-	width: 95%;
-}
+	
 
 }
 
@@ -746,188 +672,41 @@
 		margin:  15px auto;
 	}
 	
+	.indepth_share_item.whatsapp{
+		display: table;
+	}
+	
 	#indepth_cover{
 		height: 540px;	
 	}
 	
-	#indepth_page6 .indepth_text{
-		padding: 15px 3px;
-	}
-	
-	.indepth_docs_ball{
-		margin: 10px 7px;
-	}
-	
-	#indepth_page4{
-		background-size: 414px auto, 1920px auto;
-		height: 1500px;
-	}
-
-	#indepth_page1{
-		background-size: 414px auto, 1920px auto;
-		height: 2200px;
-	}
-
-	.indepth_docs_container{
-		width: 320px;
-		height: auto;
-		margin: auto;
-	}
-
-	.indepth_docs, .indepth_docs_container{
-		height: auto;
-	}
-
-	.indepth_docs_small{
-		position: relative;
-	}
-
-	.indepth_docs{
-		width: 320px;
-	}
-
-	.indepth_docs_left,.indepth_docs_r{
-		float: none;
-		width: 100%;
-	}
-
-	.indepth_docs_description{
-		position: relative;
-		margin-bottom: 5px;
-	}
-	
-	#partidos{
-		width: 100% !important;
-	}
-	
-
-	
-	#info_controls{
-		width: 300px;
-	}
-	
-	#info_controls img{
-		width: 100%;
-	}
-	
-	.indepth_tabla_mapa_club_text{
-		padding-left: 5px;
-		font-size: 14px;
-	}
-	
-	.indepth_mapa_text_content{
-		width: 280px;
-	}
-	
-	.indepth_tabla_mapa{
-		width: 99%;
-	}
-	
-	#indepth_mapa_text{
-		width: 280px;
-	}
-	
-	#indepth_cover .indepth_title{
-		width: 100%;
-		font-size: 26px;
-		margin-top: 0px;
-	}
-	
-	#indepth_cover .indepth_cover_back_body{
-		top:240px;
-	}
-	
-	.indepth_break {
-		height: auto;
-		width: 100%;
-		height: 300px;
-		max-height: 300px;
-	}
-	
-	.indepth_break .indepth_parallax_back {
-		max-height: 300px;
-		background-size: auto 100%;
-	}
-	.indepth_break .indepth_parallax_back .indepth_text_container{
-		padding: 10px 10px;
-		margin-top: 300px;
+	.indepth_menu_item{
 		float: left;
-	}
-	
-	.indepth_quote_left{
-		width: 300px;
-	}
-	
-	.indepth_quote{
-		font-size: 20px;
-		padding: 0px;
-	}
-	.indepth_image_left{
-		width: 100%;
-	}
-	.indepth_image_left img,.indepth_image_r img{
-		width: 100%;
-	}
-	
-	#indepth_break_1 .indepth_parallax_back{
-		background-position:  50% 50%;
-	}
-	
-
-	#indepth_break_3 .indepth_parallax_back{
-		background-position:  50% 50%;
-	}
-	
-	
-	.indepth_editor_comm{
-		float: none;
-		margin-right: 0px;
-		width: 250px;
-	}
-	
-	.rertert{
-		width: 300px;
+		width: 30px;
+		height: 30px;
+		margin-right: 5px;
 		
 	}
 	
-	.editor_picture{
-		margin: auto;
-		position: relative;
-	}
-	
-	.indepth_twitter_editor_header{
-		text-align: center;
-	}
-	.indepth_twitter_editor_header span{
-		padding: 0px 3px;
-		margin-left: 0px;
+	#indepth_cover .indepth_parallax_back{
+		background: url(../images/movil/JC_1_Portada.jpg);
+		background-size: 100% auto;
+		background-position: center center;
+		background-attachment: inherit;	
 	}
 
-	
-
-	#indepth_ads #indepth_parallax_back {
-		background-size: 100%;
-		height: 400px;
-		background-color: #DEF020;
-		background-repeat: no-repeat;
-		background-attachment: initial;
-		background-position: 50% 50%;
-	}
 }
 	
 @media screen and (max-width: 360px) {
-			.indepth_docs_ball {
-margin: 0 12px;
-}
-
-#indepth_page1{
-	height: 2600px;
-}
-
-#indepth_page4{
-	height: 2000px;
-}
+	
+	.indepth_menu_item{
+		float: left;
+		width: 25px;
+		height: 25px;
+		margin-right: 7px;
+		
 	}
+}
 	
 	@media screen and (max-width: 320px) {
 .indepth_box{
@@ -974,14 +753,7 @@ top: 160px;
 #indepth_cover .indepth_title {
 font-size: 25px;
 }
-		#indepth_break_5 .indepth_parallax_back {
-		background-size: auto 100%;
-height: 300px;
-		background-color: white;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-position: 50% 50%;
-	}
+
 	
 	.simione {
 		margin: -40px -50px -20px 10px;

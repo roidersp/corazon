@@ -1,6 +1,6 @@
 var disqus_shortname = 'juanfutbol';
 var disqus_identifier;
-var disqus_url="32f0781c-275f-4eac-b19f-32db292d0eb0";
+var disqus_url="d473f803-47d3-49af-8a63-b371425e4a31";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
@@ -23,9 +23,9 @@ $(document).on("click", "#indepth_button_ver" ,function(){
 		 var position = $("#indepth_page"+num_menu).position();
 		 
 		 if(detect_mobile()){
-			 f_top=position.top-61;
+			 f_top=position.top+60;
 		 }else{
-			 f_top=position.top;
+			 f_top=position.top+60;
 		 }
 		$('html, body').animate({
 			scrollTop: f_top
@@ -240,12 +240,13 @@ $(document).ready(function(){
 	    console.log("ipad")
     }
 		loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
+		$('#indepth_cover').css("height",(ventana_alto-60)+"px");
 });
 
 $(window).on("resize", function(){
 	indepth_sizeAdjust(false);
 	var ventana_alto = $(window).height();
-    	$('#indepth_cover').css("height",(ventana_alto)+"px");
+    	$('#indepth_cover').css("height",(ventana_alto-60)+"px");
     	 if(ventana_alto>600){
 	 	$('#indepth_cover .indepth_cover_back_body').css("top",ventana_alto*.30);
  	}
